@@ -1,0 +1,58 @@
+body {
+  background: rgb(245, 247, 248);
+}
+
+input, button {
+  border-style: solid;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+h1, h2 {
+  letter-spacing: -0.02em;
+}
+
+h1, h2, h3, p, li {
+  color: #364554;
+}
+
+.b--indigo {
+  border-color: #364554;
+}
+
+.indigo {
+  color: #364554;
+}
+
+.bg-indigo-muted {
+  background: #385b6f;
+}
+
+.bg-indigo {
+  background: rgb(22, 58, 79);
+}
+
+.bg-list {
+  background: #e4e7ef;
+}
+
+.shadow-big {
+  box-shadow: 0 0 10px 3px rgba(0,0,0,0.075), 0 0 40px 5px rgba(0,0,0,0.075)
+}
+
+.inset-shadow-big {
+  box-shadow: 0 0 10px 3px rgba(0,0,0,0.075), 0 0 40px 5px rgba(0,0,0,0.075)
+}
+
+.display-ss {
+  width: 800px;
+}
+
+@media screen and (max-width: 30em) {
+  .display-ss {
+    width: 100%;
+  }
+}
