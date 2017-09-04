@@ -1,5 +1,11 @@
+@import url('https://rsms.me/interface/interface.css');
+
 body {
   background: rgb(245, 247, 248);
+}
+
+.interface {
+    font-family: Interface, -apple-system, sans-serif;
 }
 
 input, button {
@@ -21,6 +27,10 @@ h1, h2, h3, p, li {
 
 .b--indigo {
   border-color: #364554;
+}
+
+.hover-indigo:hover {
+  color: #364554;
 }
 
 .indigo {

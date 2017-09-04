@@ -1,38 +1,44 @@
-.sans-serif.w-100.overflow-x-hidden
+.interface.w-100.overflow-x-hidden
   .w-100.pv3.ph3.ph5-ns.bb.b--black-10.dt.dt--fixed
     .dtc.v-mid.w-20
-      p.mb0.b.tracked-tight Contextual
+      img.w2(src="/assets/contextual-logo.png", alt="")
     .dtc.v-mid.w-80.tr
-      ul.list.pl0.ma0.f7.ttu.b
+      ul.list.pl0.ma0.f7.ttu.fw5
         li.dib
-          a.link.dim.indigo.pa2( href='http://beta.getcontextual.com') Sign in 
+          a.link.dim.indigo.pa2( href='http://beta.getcontextual.com/#/login') Sign in 
         li.dib.ml4 
-          a.br1.bg-indigo.pv2.ph3.white.b.pointer.dim.nowrap.link(data-scroll href='#beta-access') Get beta access &darr;
-  .w-100.min-vh-100
+          a.fw5r1.bg-indigo.pv2.ph3.white.b.pointer.dim.nowrap.link( href='http://beta.getcontextual.com/#/signup') Sign up
+  section
     .mw8.center.ph4.pt5
-      .measure-wide.center.tc.mb5
-        h1.f3.f2-ns.lh-title Do the right task‚ at the right time.
-        p.lh-copy.mb5.georgia.o-70 Contextual keep you focused by showing you only tasks that you need to do—depending on where you are, and how much energy you have.
-        a(data-scroll href='#inbox').f6.dib.pv3.ph4.br1.bg-indigo.white.ttu.tracked.b.pointer.dim.link Learn more &darr;
-    .mw8.center.ph2
-      img.db.w-100.bg-black-20.shadow-big.br1.br-top.overflow-hidden(src='/assets/ctx-landing.png')
-  .w-100.bg-indigo.white.overflow-hidden.inset-shadow-big#inbox
-    .mw8.center.cf.pv5.pv6-ns.ph4
-      .fl.w-100.w-50-ns.relative.h1-ns.dn.db-ns
-        .relative.absolute-ns.right-0.right-2-ns.shadow-big.display-ss(style='top: -3rem;')
-          img.w-100(src='/assets/ctx-inbox.png')
-      .fl.w-100.w-50-ns
-        h2.f3.f2-ns.lh-title.white.o-90 Add it to the inbox.
-        .lh-copy.o-70.georgia
+      .measure-wide.center.tc.mb4
+        h1.f3.f1-ns.tracked-tight.lh-title Getting Things Done, without the complexity.
+        p.lh-copy.mb5.georgia.o-80 Contextual keep you focused by showing you only tasks that you need to do—depending on where you are, and how much energy you have.
+        a.f6.dib.pv3.ph4.br1.bg-indigo.white.ttu.tracked.b.pointer.dim.link(data-scroll href='#inbox') Learn more &darr;
+    .mw8.center.relative
+      img(src='/assets/mbp.png')
+      .absolute(style="top: 9.5%; left: 15%; width: 71%;")
+        img.db.w-100.bg-black-20.overflow-hidden(src='/assets/ctx-landing.png')
+  section.bg-indigo.white#inbox
+    .mw9.center.cf.pv5.ph4.overflow-hidden.ml3-l
+      .fl.w-100.w-60-l.relative.dn.db-l.h1-l
+        .absolute
+          img(src='/assets/mbp.png')
+          .absolute(style="top: 9.5%; left: 15%; width: 71%;")
+            img.db.w-100.bg-black-20.overflow-hidden(src='/assets/ctx-inbox.png')
+      .fl.w-100.mw5-ns.center
+        h2.f3.f2-ns.lh-title.white.o-90.tracked-tight Add it to the inbox.
+        .lh-copy.o-80.georgia
           p.white Your headspace is finite resource: stop relying to it to remember your tasks. Instead, dump everything on The inbox to be processed later.
-  .w-100
-    .mw9.center.pt5.pt6-ns.pb5.ph4
-      .measure-wide.center.mb5.tc.mb5
-        h2.f3.f2-ns.lh-title Process each task. Assign the right project, context, and energy.
-        p.lh-copy.georgia.o-70 These three areas will keep you organized.
-      .cf
-        .fl.w-100.w-100-m.w-third-ns.pa4-ns.ph2.pv4.bb.bb-m.b--black-10.bw0-ns
-          i.f3.f2-ns.fa.fa-briefcase.mb3.indigo.o-70
+  section
+    .mw9.center.pv5.pt6-l.ph4.ph0-l
+      .mw6.mb4.mb5-ns.ml5-l
+        h2.f3.f2-ns.lh-title.tracked-tight Process each task.
+          br 
+          | Assign the right project, context, and energy.
+        p.lh-copy.georgia.o-80 These three areas will keep you organized.
+      .cf.ml5-l
+        .fl.w-100.measure-m.w-third-l.pv4.bb.bb-m.b--black-10.bw0-ns.pr4-l
+          i.f3.f2-ns.fa.fa-briefcase.mb3.indigo.o-80
           h2.f6.ttu.b Step 1: Add tasks to a Project
           p.lh-copy.mb1 You're going to remodel your kitchen. It's a project that have many smaller tasks. So, you'll add:
           ul.pa4.bg-list
@@ -42,8 +48,8 @@
           p To 
             span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code kitchen remodel
             |  project.
-        .fl.w-100.w-100-m.w-third-ns.pa4-ns.ph2.pv4.bb.bb-m.b--black-10.bw0-ns
-          i.f3.f2-ns.fa.fa-compass.mb3.indigo.o-70
+        .fl.w-100.measure-m.w-third-l.pv4.bb.bb-m.b--black-10.bw0-ns.pr4-l
+          i.f3.f2-ns.fa.fa-compass.mb3.indigo.o-80
           h2.f6.ttu.b Step 2: Add relevant Context
           p.lh-copy Context helps you to 
             em.georgia.o-60 filter 
@@ -55,8 +61,8 @@
               span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code @Errands
             li.lh-copy.mb2 Move car from the garage &rarr; 
               span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code @Home
-        .fl.w-100.w-100-m.w-third-ns.pa4-ns.ph2.pv4.bb.bb-m.b--black-10-ns.b--transparent.bw0-ns
-          i.f3.f2-ns.fa.fa-bolt.mb3.indigo.o-70
+        .fl.w-100.measure-m.w-third-l.pv4.bb.bb-m.b--black-10-ns.b--transparent.bw0-ns
+          i.f3.f2-ns.fa.fa-bolt.mb3.indigo.o-80
           h2.f6.ttu.b Step 3: Assign energy needed
           p.lh-copy Energy helps you to filter tasks based on your willpower at the time.
           ul.pa4.br1.bg-list
@@ -68,45 +74,63 @@
               span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code medium energy
     .ph4.ph6-ns
       .bb.b--black-10
-  .w-100
-    .mw8.center.cf
-      .fl.w-100.w-50-ns.pv5.ph4
-        .mb5
-          div.mb3
-            h2.f3.f2-ns.mb1 Start Getting Focused
-          p.georgia.measure.lh-copy.o-70.mb2 Being overwhelmed from reading unrelevant tasks is not cool. Contextual will show you only the relevant one.
-        ul.measure.lh-copy.mb4.pa4.bg-list
-          li.mb4 
-            p.mb1.b Just got home and tired? 
-            p.georgia Set context to 
-              span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code @home
+  .mw9.cf.relative.center
+    .w-100.mt5.mb4.ml4-l
+      .ph4.tc.tl-l
+        h2.f3.f2-ns.mb1.tracked-tight.mw5-l Start Getting Focused
+        p.georgia.center-m.measure.lh-copy.o-80.mb2.pr5-l Being overwhelmed from reading unrelevant tasks is not cool. Contextual will show you only the relevant one.
+      .w-60-l.absolute-l.top-0.right-0.mv4.mt6-l.relative
+        img(src='/assets/mbp.png')
+        .absolute(style="top: 9.5%; left: 15%; width: 71%;")
+          img.db.w-100.bg-black-20.overflow-hidden(src='/assets/ctx-focus.png')
+    .w-100.measure-m.w-40-l.pl5-l.ph3
+      ul.lh-copy.pa4.bg-list
+        li.mb4 
+          p.mb1.b Just got home and tired? 
+          p.georgia Set context to 
+            span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code @home
+            |  and energy to 
+            span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code under 5 minutes
+        li.mb4 
+          p.mb1.b Just got to office and feeling focused? 
+          p.georgia Set context to 
+              span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code @work
               |  and energy to 
-              span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code under 5 minutes
-          li.mb4 
-            p.mb1.b Just got to office and feeling focused? 
-            p.georgia Set context to 
-                span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code @work
-                |  and energy to 
-                span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code full focus
-          li.mb4 
-            p.mb1.b Queueing at your dentist and have time for short call?
-            p.georgia Set context to 
-                span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code @phone
-                |  and energy to 
-                span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code medium energy
-      .fl.w-100.w-50-ns.pa0.pl5-ns.pt6-ns.relative
-        .relative.absolute-ns.shadow-big.display-ss
-          img.w-100.db(src='/assets/ctx-focus.png')
-  .w-100.bg-indigo.white#beta-access
-    .mw8.center.pv5.ph4
-      .tc
-        h2.f3.f2-ns.white.lh-title.mb3 Ready to be more focused? 
-        p.georgia.white.o-80.lh-copy Get beta access by sending an email to 
-          a.white.dim(href='mailto:hello@philipyoungg.com?subject=Contextual Beta Access') hello@philipyoungg.com 
-          | or DM me on  
-          a.white.dim(href="https://www.twitter.com/philipyoungg" target='_blank') twitter.
-          br
-          | p.s. Slack account is needed for feedback
+              span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code full focus
+        li.mb4
+          p.mb1.b Queueing at your dentist and have time for short call?
+          p.georgia Set context to 
+              span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code @phone
+              |  and energy to 
+              span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code medium energy
+  .mw8.center.pv5.pv6-l.ph3.ph5-ns.tc
+        a.dib.tc.pv3.ph5.white.pointer.dim.bg-indigo.b.br1.link.ttu(href='http://beta.getcontextual.com') Get your free account! &rarr;
+  .w-100.pv2.ph3.ph5-ns.bt.b--black-10.flex.justify-between.items-center
+    .flex.items-center
+      img.w2.w3-ns(src="/assets/contextual-logo.png", alt="")
+      .ml2
+        p.mb0.f7.f6-ns.o-60 Contextual. A project by 
+            a.link.underline.indigo.o-70(href='http://www.philipyoungg.com') Philip Young
+    .tr.dn.db-ns
+      ul.list.pl0.ma0.f7.ttu.fw5
+        li.dib
+          a.link.dim.indigo.pa2( href='http://beta.getcontextual.com/#/login') Sign in 
+        li.dib.ml4 
+          a.fw5r1.bg-indigo.pv2.ph3.white.b.pointer.dim.nowrap.link( href='http://beta.getcontextual.com/#/signup') Sign up
+      
+      
+        
+        //-   form(action="https://formspree.io/philip.young.gunawan@gmail.com"
+        //- method="POST")
+        //-     input.w-100.bw0.pa3.mb2.br1.indigo(style='box-sizing: border-box;' placeholder='email' type='email' name='_replyto')
+        //-     button.input-reset.w-100.pa3.b.b--white.bg-transparent.white.pointer.hover-bg-white.hover-indigo.br1(type='submit' value='Send') Request beta access &rarr;
+
+        //- p.georgia.white.o-80.lh-copy Get beta access by sending an email to 
+        //-   a.white.dim(href='mailto:hello@philipyoungg.com?subject=Contextual Beta Access') hello@philipyoungg.com 
+        //-   | or DM me on  
+        //-   a.white.dim(href="https://www.twitter.com/philipyoungg" target='_blank') twitter.
+        //-   br
+        //-   | p.s. Slack account is needed for feedback
       //- form
       //-   input.input-reset.pa3.mr3.mb3.bw0.w-100.w5-ns(placeholder='name')
       //-   input.input-reset.pa3.mr3.mb3.bw0.w-100.w5-ns(placeholder='email')
