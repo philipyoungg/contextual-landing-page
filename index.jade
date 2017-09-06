@@ -1,4 +1,4 @@
-.interface.w-100.overflow-x-hidden
+.w-100.overflow-x-hidden
   .w-100.pv3.ph3.ph5-ns.bb.b--black-10.dt.dt--fixed
     .dtc.v-mid.w-20
       img.w2(src="/assets/contextual-logo.png", alt="")
@@ -8,22 +8,22 @@
           a.link.dim.indigo.pa2( href='http://beta.getcontextual.com/#/login') Sign in 
         li.dib.ml4 
           a.fw5r1.bg-indigo.pv2.ph3.white.b.pointer.dim.nowrap.link( href='http://beta.getcontextual.com/#/signup') Sign up
-  section
+  section.mb5
     .mw8.center.ph4.pt5
-      .measure-wide.center.tc.mb4
+      .measure-wide.center.tc.mb2
         h1.f3.f1-ns.tracked-tight.lh-title Getting Things Done, without the complexity.
         p.lh-copy.mb5.georgia.o-80 Contextual keep you focused by showing you only tasks that you need to do—depending on where you are, and how much energy you have.
         a.f6.dib.pv3.ph4.br1.bg-indigo.white.ttu.tracked.b.pointer.dim.link(data-scroll href='#inbox') Learn more &darr;
-    .mw8.center.relative
+    .mw8.center.relative.scale-1-2
       img(src='/assets/mbp.png')
-      .absolute(style="top: 9.5%; left: 15%; width: 71%;")
+      .absolute(style="top: 20%; left: 20%; width: 60%;")
         img.db.w-100.bg-black-20.overflow-hidden(src='/assets/ctx-landing.png')
-  section.bg-indigo.white#inbox
-    .mw9.center.cf.pv5.ph4.overflow-hidden.ml3-l
-      .fl.w-100.w-60-l.relative.dn.db-l.h1-l
-        .absolute
+  section.white#inbox.mb5
+    .mw8.cf.pv5.ph4.bg-indigo.right.center
+      .fl.w-100.w-70-l.relative.h1-l
+        .relative.absolute-l.inbox-float.scale-1-2
           img(src='/assets/mbp.png')
-          .absolute(style="top: 9.5%; left: 15%; width: 71%;")
+          .absolute(style="top: 20%; left: 20%; width: 60%;")
             img.db.w-100.bg-black-20.overflow-hidden(src='/assets/ctx-inbox.png')
       .fl.w-100.mw5-ns.center
         h2.f3.f2-ns.lh-title.white.o-90.tracked-tight Add it to the inbox.
@@ -31,7 +31,7 @@
           p.white Your headspace is finite resource: stop relying to it to remember your tasks. Instead, dump everything on The inbox to be processed later.
   section
     .mw9.center.pv5.pt6-l.ph4.ph0-l
-      .mw6.mb4.mb5-ns.ml5-l
+      .mw6.mb4.ml5-l
         h2.f3.f2-ns.lh-title.tracked-tight Process each task.
           br 
           | Assign the right project, context, and energy.
@@ -74,14 +74,14 @@
               span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code medium energy
     .ph4.ph6-ns
       .bb.b--black-10
-  .mw9.cf.relative.center
-    .w-100.mt5.mb4.ml4-l
+  .mw9.cf.relative.center.mb5.mb7-l.pb5
+    .w-100.mt5.ml4-l
       .ph4.tc.tl-l
-        h2.f3.f2-ns.mb1.tracked-tight.mw5-l Start Getting Focused
+        h2.f3.f2-ns.mb1.tracked-tight.mw5-l Focus on Relevant Tasks.
         p.georgia.center-m.measure.lh-copy.o-80.mb2.pr5-l Being overwhelmed from reading unrelevant tasks is not cool. Contextual will show you only the relevant one.
-      .w-60-l.absolute-l.top-0.right-0.mv4.mt6-l.relative
+      .w-60-l.absolute-l.top-0.right-0.mv4.mt5-l.relative.z-1.scale-1-2
         img(src='/assets/mbp.png')
-        .absolute(style="top: 9.5%; left: 15%; width: 71%;")
+        .absolute(style="top: 20%; left: 20%; width: 60%;")
           img.db.w-100.bg-black-20.overflow-hidden(src='/assets/ctx-focus.png')
     .w-100.measure-m.w-40-l.pl5-l.ph3
       ul.lh-copy.pa4.bg-list
@@ -103,11 +103,22 @@
               span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code @phone
               |  and energy to 
               span.pv1.ph2.br1.bg-indigo.white.b.nowrap.f6.lh-solid.code medium energy
-  .mw8.center.pv5.pv6-l.ph3.ph5-ns.tc
-        a.dib.tc.pv3.ph5.white.pointer.dim.bg-indigo.b.br1.link.ttu(href='http://beta.getcontextual.com') Get your free account! &rarr;
-  .w-100.pv2.ph3.ph5-ns.bt.b--black-10.flex.justify-between.items-center
+  .mw8.center.ph5.pv5.pb6.bg-indigo.cf
+    .fl.w-50-l.relative.h1-l
+      .w-100.relative.absolute-l.phone-float
+        img(src='/assets/ip7-mockup.png')
+        .absolute.w-100.top-0(style="top: 17%; max-width: 57%; left: 21.5%")
+          img(src='/assets/ctx-mobile.png')
+    .fl.w-50-l
+      h2.f3.f2-ns.lh-title.white.o-90.tracked-tight Accesible. Everywhere.
+      .lh-copy.o-80.georgia
+        p.white Never miss adding task to your inbox. Access your task everywhere. As long your phone support browser, then it's good to go. 
+    
+  .mw8.center.pv5.pv6-l.cf.tc.tr-l
+        a.fr-l.dib.tc.pv3.ph5.white.pointer.dim.bg-indigo.b.br1.link.ttu(href='http://beta.getcontextual.com/#/signup') Get your free account! &rarr;
+  .w-100.pv3.ph3.ph5-ns.bt.b--black-10.flex.justify-between.items-center
     .flex.items-center
-      img.w2.w3-ns(src="/assets/contextual-logo.png", alt="")
+      img.w2(src="/assets/contextual-logo.png", alt="")
       .ml2
         p.mb0.f7.f6-ns.o-60 Contextual. A project by 
             a.link.underline.indigo.o-70(href='http://www.philipyoungg.com') Philip Young

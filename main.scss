@@ -2,10 +2,7 @@
 
 body {
   background: rgb(245, 247, 248);
-}
-
-.interface {
-    font-family: Interface, -apple-system, sans-serif;
+  font-family: Interface, BlinkMacSystemFont, -apple-system, sans-serif;
 }
 
 input, button {
@@ -61,8 +58,23 @@ h1, h2, h3, p, li {
   width: 800px;
 }
 
+.scale-1-2 {
+  transform: scale(1.2);
+}
+
 @media screen and (max-width: 30em) {
   .display-ss {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .inbox-float {
+    top: -4rem;
+    left: -2rem;
+  }
+  .phone-float {
+    left: -2rem;
+    top: -18rem;
   }
 }
