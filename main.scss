@@ -15,7 +15,39 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1, h2 {
-  letter-spacing: -0.02em;
+  letter-spacing: -0.05em;
+}
+
+.article {
+  font-size: 18px;
+  line-height: 1.7;
+  h1,h2,h3,p {
+    margin-bottom: 1.5em;
+  }
+  h1,h3 {
+    letter-spacing: -0.05em;
+  }
+  h1 {
+    font-size: 4rem;
+    line-height: 1.15;
+    margin-bottom: 4rem;
+  }
+  h3 {
+    margin-top: 6rem;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+  }
+  ul, ol {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  ul ul, ol ol {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  li {
+    margin-bottom: .25em;
+  }
 }
 
 h1, h2, h3, p, li {
@@ -58,6 +90,10 @@ h1, h2, h3, p, li {
   width: 800px;
 }
 
+.pointer-none {
+  pointer-events: none;
+}
+
 .scale-1-2 {
   transform: scale(1.2);
 }
@@ -65,6 +101,27 @@ h1, h2, h3, p, li {
 @media screen and (max-width: 30em) {
   .display-ss {
     width: 100%;
+  }
+
+  .article {
+    font-size: 14px;
+    line-height: 1.6;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+    ul, ol {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+    h3 {
+      font-size: 1.5em;
+      margin-top: 2em;
+      margin-bottom: .5em;
+    }
   }
 }
 

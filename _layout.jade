@@ -7,7 +7,37 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title='Contextual - Getting Things Done, Without The Complexity'
   body
+    .w-100.overflow-x-hidden
+      .w-100.pv3.ph3.ph5-ns.bb.b--black-10.dt.dt--fixed
+        a.dtc.v-mid.w-20(href='/')
+          img.w2(src="/assets/contextual-logo.png", alt="")
+        .dtc.v-mid.w-80.tr
+          ul.list.pl0.ma0.f7.ttu.fw5.db
+            li.dib
+              a.link.dim.indigo.pa2(href='/pricing') Pricing
+            li.dib.ml3.ml4-ns
+              a.link.dim.indigo.pa2(href='/story') Story
+            li.dib.ml3.ml4-ns
+              a.link.dim.indigo.pa2( href='http://beta.getcontextual.com/#/login') Sign in 
+            li.dib.ml3.ml4-ns
+              a.mt1.mt0-ns.db.fw5.bg-indigo.pv2.ph3.white.b.pointer.dim.nowrap.link( href='http://beta.getcontextual.com/#/signup') Sign up
     != yield
+    .w-100.pv3.ph3.ph5-ns.bt.b--black-10.flex.justify-between.items-center
+      .flex.items-center
+        img.w2(src="/assets/contextual-logo.png", alt="")
+        .ml2
+          p.mb0.f7.f6-ns.o-60 Contextual. A project by 
+              a.link.underline.indigo.o-70(href='http://www.philipyoungg.com') Philip Young
+      .tr.dn.db-ns
+        ul.list.pl0.ma0.f7.ttu.fw5
+          li.dib
+            a.link.dim.indigo.pa2(href='/pricing') Pricing
+          li.dib.ml4
+            a.link.dim.indigo.pa2(href='/story') Story
+          li.dib.ml4
+            a.link.dim.indigo.pa2( href='http://beta.getcontextual.com/#/login') Sign in 
+          li.dib.ml4 
+            a.fw5r1.bg-indigo.pv2.ph3.white.b.pointer.dim.nowrap.link( href='http://beta.getcontextual.com/#/signup') Sign up
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
